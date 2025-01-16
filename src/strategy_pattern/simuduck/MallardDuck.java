@@ -1,9 +1,7 @@
-package basic.simuduck;
+package strategy_pattern.simuduck;
 
-import basic.simuduck.fly.FlyNoWay;
-import basic.simuduck.fly.FlyWithWings;
-import basic.simuduck.quack.Quack;
-import basic.simuduck.quack.Squeak;
+import strategy_pattern.simuduck.fly.FlyWithWings;
+import strategy_pattern.simuduck.quack.Quack;
 
 public class MallardDuck extends Duck {
 

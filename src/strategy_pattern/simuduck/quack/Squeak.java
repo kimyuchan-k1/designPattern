@@ -1,4 +1,4 @@
-package basic.simuduck.quack;
+package strategy_pattern.simuduck.quack;
 
 public class Squeak implements QuackBehavior {
 
