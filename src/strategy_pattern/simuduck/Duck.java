@@ -1,10 +1,17 @@
-package basic.simuduck;
+package strategy_pattern.simuduck;
 
-import basic.simuduck.fly.FlyBehavior;
-import basic.simuduck.quack.QuackBehavior;
+import strategy_pattern.simuduck.fly.FlyBehavior;
+import strategy_pattern.simuduck.quack.QuackBehavior;
 
 // 슈퍼클래스
 public abstract class Duck {
+    //setter - 동적으로 할당!!
+    public void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
+    public void setQuackBehavior(QuackBehavior qb) {
+        quackBehavior = qb;
+    }
 
     // 변하는 것들. - quack, fly -인터페이스로 설계
     FlyBehavior flyBehavior;
